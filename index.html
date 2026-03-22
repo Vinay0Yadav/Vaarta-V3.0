@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAARTA V3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to VAARTA V3</h1>
+        <nav>
+            <ul>
+                <li><a href="#auth">Authentication</a></li>
+                <li><a href="#messaging">Messaging</a></li>
+                <li><a href="#feed">Social Feed</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#communities">Communities</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="auth">
+            <h2>Authentication</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="messaging">
+            <h2>Messaging</h2>
+            <div id="messages"></div>
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button id="sendMessage">Send</button>
+        </section>
+        <section id="feed">
+            <h2>Social Feed</h2>
+            <div id="feedPosts"></div>
+        </section>
+        <section id="stories">
+            <h2>Stories</h2>
+            <div id="storiesList"></div>
+        </section>
+        <section id="communities">
+            <h2>Communities</h2>
+            <div id="communityList"></div>
+        </section>
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <div id="notificationList"></div>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <form>
+                <label for="notificationsToggle">Enable Notifications:</label>
+                <input type="checkbox" id="notificationsToggle" name="notificationsToggle">
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 VAARTA V3 Team</p>
+    </footer>
+</body>
+</html>
